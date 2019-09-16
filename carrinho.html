@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login | E-Sports</title>
+    <title>Carrinho | E-Sports</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -113,45 +113,120 @@
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 	
-	<!-- LOGIN -->
-	<section id="form"><!--form-->
+	<section id="cart_items">
+		<div class="container">
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Item</td>
+							<td class="description"></td>
+							<td class="price">Preço Unitário</td>
+							<td class="quantity">Quantidade</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/one.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Vestido</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>R$56,00</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">R$56,00</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/one.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Vestido</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>R$56,00</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">R$56,00</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td class="cart_product">
+								<a href=""><img src="images/cart/one.png" alt=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Vestido</a></h4>
+								<p>Web ID: 1089772</p>
+							</td>
+							<td class="cart_price">
+								<p>R$56,00</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">R$56,00</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section> <!--/#cart_items-->
+
+	<section id="do_action">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form"><!--login form-->
-						<h2>Crie sua conta</h2>
-						<form action="#">
-							<input id ="nome" name ="nome" type="text" required="required" maxlength="20" placeholder="Username" /> 
-							<input id ="email" name ="email" type="email" placeholder="Email" /> 
-							<input id ="senha" name ="senha" type="password" placeholder="Senha" /> 
-							<input id ="senha" name ="senha" type="password" placeholder="Confirme sua senha" /> 
-							<button type="submit" class="btn btn-default">Cadastrar</button>
-						</form>
-					</div><!--/login form-->
-				</div>
-				<div class="col-sm-1">
-					<h2 class="or">OU</h2>
-				</div>
-				<div class="col-sm-4">
-					<div class="signup-form"><!--sign up form-->
-						<h2>Entre com sua Rede Social</h2>
-						<div class="tudo" style="margin-left: 10%;">
-							<div class="row" style="margin-top: 15px;">
-								<button type="button" class="btn btn-primary" style="background-color: steelblue; border-radius: 5px; width: 250px; height: 38px;">  Entrar com Facebook </button>
-							</div>
-							<div class="row" style="margin-top: 15px;">
-								<button type="button" class="btn btn-info" style="width: 250px;">  Entrar com Twitter </button>
-							</div>
-							<div class="row" style="margin-top: 15px;">
-								<button type="button" class="btn btn-danger" style="width: 250px;"> Entrar com Google+ </button>
-							</div>
-						</div>
-					</div><!--/sign up form-->
+				<div class="col-sm-6">
+					<div class="total_area">
+						<ul>
+							<li>Total <span>R$59,00</span></li>
+							<li>Taxa <span>R$2,00</span></li>
+							<li>Total <span>R$61,00</span></li>
+						</ul>
+							<a class="btn btn-default check_out" href="">Comprar</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section><!--/form-->
-	
+	</section><!--/#do_action-->
+
 	<!-- RODAPÉ -->
     <footer id="footer">
         <!--Footer-->
@@ -214,7 +289,7 @@
 
     </footer>
     <!--/Footer-->
-    
+	
 	
 	<!-- BANNER -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -223,11 +298,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" rel="stylesheet">	
 
-  
+
     <script src="js/jquery.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
 </body>
